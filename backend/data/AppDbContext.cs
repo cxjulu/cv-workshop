@@ -1,4 +1,4 @@
-﻿using backend.Data.Models;
+using backend.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace backend.Data
@@ -12,7 +12,8 @@ namespace backend.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<User>()
+            modelBuilder
+                .Entity<User>()
                 .HasMany(u => u.Experiences)
                 .WithOne(e => e.User)
                 .HasForeignKey(e => e.UserId)
