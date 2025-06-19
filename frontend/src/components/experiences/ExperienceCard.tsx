@@ -1,7 +1,7 @@
 import { Experience } from "../../types/types";
 import styles from "./ExperienceCard.module.css";
 import akersgataImage from "../../assets/akersgata.jpg";
-import { CxIcon } from "@computas/designsystem/icon/react";
+
 import { ExperienceChip } from "./ExperienceChip";
 
 interface ExperienceCardProps {
